@@ -1,6 +1,7 @@
 _*
 build/
 node_modules/
+deploy/
 _gen/
 gen/
 .metadata
