@@ -1,0 +1,27 @@
+{
+  "project": "hello-secret",
+  "version": "0.0.1",
+
+  "runtime": "nodejs8",
+  "library": "./lib",
+
+  "secrets": {
+    "sec1": {
+      "source" : "./data"
+    }
+  },
+
+  "functions": {
+    "hello-secret": {
+      "module": "index.js",
+      "secrets": ["sec1"]
+    }
+  },
+
+  "triggers": {
+    "demo": {
+      "type": "HTTP",
+      "function": "hello-secret"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+secret-values:
+  hello-amqp-service-secret:
+    dial:
+      uri: 'wss://enterprise-messaging-messaging-gateway.cfapps.eu10.hana.ondemand.com/protocols/amqp10ws'
+      oa2:
+        endpoint: 'https://functions-sub.authentication.eu10.hana.ondemand.com/oauth/token'
+        client: 'sb-clone-xbem-service-broker-dbf26786833d493296b35acefd0b2617-clone!b9198|xbem-service-broker-!b2436'
+        secret: 'tFLm7qlDyWS6Y1QLIHyIznAW0Vo='
+    sasl:
+      mechanism: ''
+      user: ''
+      password: ''
+config-values:
+  hello-amqp-service-config:
+    amqp:
+      incoming:
+        inp1:
+          sourceAddress: 'queue:hello-amqp'
+          sndSettleMode: 0
+          rcvSettleMode: 0
+          maxLinkCredit: 50
+  hello-amqp-client:
+    target: 'topic:faas/hello-amqp'

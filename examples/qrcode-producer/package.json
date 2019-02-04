@@ -1,0 +1,28 @@
+{
+  "engines": {
+    "node": ">=8.10"
+  },
+  "dependencies": {
+    "qrcode": "1.2.2"
+  },
+  "devDependencies": {
+    "@sap/faas": "0.5.0-20181203-171653",
+    "eslint": "=5.8.0",
+    "jsdoc": "=3.5.5",
+    "mocha": "=5.2.0",
+    "sinon": "=7.1.1",
+    "supertest": "=3.3.0",
+    "istanbul": "=0.4.5",
+    "filter-node-package": "=2.1.2"
+  },
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "npm run all-tests",
+    "all-tests": "node ./node_modules/mocha/bin/_mocha test/**/test*.js --colors -csdlJson --slow 200",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive test/unit && istanbul check-coverage ./_gen/coverage/coverage.json",
+    "cover-unit-tests": "istanbul cover ./node_modules/mocha/bin/_mocha -- test/unit/**/test*.js --slow 200 && istanbul check-coverage ./_gen/coverage/coverage.json"
+  }
+}

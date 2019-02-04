@@ -1,0 +1,18 @@
+{
+  "engines": {
+    "node": ">=8.10"
+  },
+  "dependencies": {
+    "request": "2.81.0"
+  },
+  "devDependencies": {
+    "@sap/faas": "0.5.0-20181203-171653",
+    "eslint": "=5.8.0",
+    "jsdoc": "=3.5.5",
+    "mocha": "=5.2.0",
+    "sinon": "=7.1.1",
+    "supertest": "=3.3.0",
+    "istanbul": "=0.4.5",
+    "filter-node-package": "=2.1.2"
+  }
+}

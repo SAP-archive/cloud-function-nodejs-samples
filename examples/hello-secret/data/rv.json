@@ -1,0 +1,10 @@
+{
+  "Info": {
+    "Success": "Demo",
+    "Failure": "Todo"
+  },
+  "Code": {
+    "Success": "A",
+    "Failure": "X"
+  }
+}

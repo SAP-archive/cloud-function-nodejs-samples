@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "hello-amqp-consumer": {}
+  },
+  "rules": [
+    {
+      "filter": { "incoming": "inp1" },
+      "action": { "function": "hello-amqp-consumer", "failure": "accept", "content": "application/json" }
+    }
+  ]
+}

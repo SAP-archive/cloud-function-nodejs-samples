@@ -1,0 +1,25 @@
+{
+  "project": "chain",
+  "version": "0.0.1",
+
+  "runtime": "nodejs8",
+  "library": "./lib",
+
+  "functions": {
+    "chain-func1": {
+      "module": "main.js",
+      "handler": "f1"
+    },
+    "chain-func2": {
+      "module": "main.js",
+      "handler": "f2"
+    }
+  },
+
+  "triggers": {
+    "chain-simple": {
+      "type": "HTTP",
+      "function": "chain-func1"
+    }
+  }
+}

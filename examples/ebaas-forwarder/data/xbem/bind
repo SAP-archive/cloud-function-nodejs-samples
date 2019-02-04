@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "send-to-ebaas": {}
+  },
+  "rules": [
+    {
+      "filter": { "incoming": "inp1" },
+      "action": { "function": "send-to-ebaas", "failure": "accept", "content": "application/cloudevents+json" }
+    }
+  ]
+}

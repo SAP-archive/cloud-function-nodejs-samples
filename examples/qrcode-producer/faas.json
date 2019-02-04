@@ -1,0 +1,20 @@
+{
+  "project": "qrcode-producer",
+  "version": "0.0.1",
+
+  "runtime": "nodejs8",
+  "library": "./lib",
+
+  "functions": {
+    "build-qrcode": {
+      "module": "iso-time.js"
+    }
+  },
+
+  "triggers": {
+    "build-qrcode": {
+      "type": "HTTP",
+      "function": "build-qrcode"
+    }
+  }
+}

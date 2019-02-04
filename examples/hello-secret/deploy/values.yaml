@@ -1,0 +1,10 @@
+secret-values:
+ sec1:
+   rv.json:
+     Info:
+       Success: Demo2
+       Failure: Todo2
+     Code:
+       Success: A2
+       Failure: X2
+   text: Hello World2!
