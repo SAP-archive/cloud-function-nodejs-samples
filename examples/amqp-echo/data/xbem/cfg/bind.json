@@ -1,0 +1,10 @@
+{
+  "rules": [
+    {
+      "filter" : { "incoming": "inp01" },
+      "action" : { "function": "amqp-echo", "failure": "reject", "content": "application/octet-stream" },
+      "replyTo": { "outgoing": "out01" },
+      "errorTo": { "outgoing": "err01" }
+    }
+  ]
+}

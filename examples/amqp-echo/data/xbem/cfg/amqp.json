@@ -1,0 +1,9 @@
+{
+  "incoming": {
+    "inp01": { "sourceAddress": "queue:test01" }
+  },
+  "outgoing": {
+    "out01": { "targetAddress": "topic:echo" },
+    "err01": { "targetAddress": "topic:echo/failed" }
+  }
+}
