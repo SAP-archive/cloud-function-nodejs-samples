@@ -33,6 +33,7 @@ git clone https://github.com/SAP/cloud-function-nodejs-samples
 ```
 
 Initial steps:
+
 1. Install __`faas-cli`__
 
    Download the binary either from Nexus or from [CP Tools Page](https://tools.hana.ondemand.com/#cloud).
