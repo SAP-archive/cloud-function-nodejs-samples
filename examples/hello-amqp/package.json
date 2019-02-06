@@ -5,7 +5,7 @@
   "dependencies": {
     "request": "2.81.0",
     "client-oauth2": "4.2.1",
-    "@sap/xb-msg-amqp-v100": "=0.9.3"
+    "@sap/xb-msg-amqp-v100": "=0.9.0"
   },
   "devDependencies": {
     "@sap/faas": "=0.5.1",

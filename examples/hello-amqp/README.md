@@ -1,4 +1,4 @@
-# hello-amqp Example
+# Example: hello-amqp
 This is a helloworld AMQP 1.0 and functions example.
 
 The producer function sends a message, each time it is executed via an HTTP trigger.
@@ -7,54 +7,30 @@ The consumer functions is subscribed to the queue which the producer function us
 
 The consumer function prints the message payload into the logs.
 
-## Prerequisite
-
-You have an enterprise messaging service instance.
-
-Configure and use the following `values.yaml` for project deployment:
-
-```
-secret-values:
-  hello-amqp-service:
-    amqp:
-      incoming:
-        inp1:
-          sourceAddress: 'queue:hello-amqp'
-          sndSettleMode: 0
-          rcvSettleMode: 0
-          maxLinkCredit: 50
-    dial:
-      uri: 'wss://<enterprise-messaging>/protocols/amqp10ws'
-      oa2:
-        endpoint: 'https://xxx/oauth/token'
-        client: 'xxx'
-        secret: 'xxx'
-    sasl:
-      mechanism: ''
-      user: ''
-      password: ''
-  hello-amqp-client:
-    target: 'topic:faas/hello-amqp'
-``` 
+## Requirements
+To run this sample an `Enterprise Messaging Service @SAP CP` is required.
 
 ## Deployment
-
-With the faas-cli:
-
+First, create a deployment file to provide credentials, topics and queue names.
+Run inside the project directory:
+```bash
+faas-sdk init-values -y values.yaml
 ```
-faas-cli project deploy --from-file hello-amqp -y values.yaml -s <my-faas> -k <my-faas-service-key> -v
+Update the generated file. And finally, deploy the project as usual:
+```bash
+ faas-cli project deploy -y ./deploy/values.yaml -s <FAAS_SERVICE> -k <FAAS_KEY> -v
 ```
 
 ## Test
 Invoke the producer function via invoking the HTTP trigger URL. 
 The HTTP trigger URL can be retrieved:
 ```
-faas-cli httptrigger get hello-amqp-http -s faas-canary -k cli-key 
+faas-cli httptrigger get hello-amqp-http -s <FAAS_SERVICE> -k <FAAS_KEY>
 ```
 
 View the logs of the consumer function.
 ```
-faas-cli function logs hello-amqp-consumer -s faas-canary -k cli-key
+faas-cli function logs hello-amqp-consumer -s <FAAS_SERVICE> -k <FAAS_KEY>
 ```
 
 Expected result:
@@ -64,3 +40,7 @@ msg: {
   "text": "Hello"
 }
 ```
+
+## License
+Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+This file is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE file](../LICENSE.txt).

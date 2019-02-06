@@ -1,11 +1,12 @@
-# Example: AMQP echo
+# Example: Ebaas Forwarder
 
-A function is triggered by messages via AMQP trigger.
-It will return (echo) the received payload.
-According to the trigger configuration the function result will be sent as a new message using a given topic.
+A function is triggered via a message from `Enterprise Messaging Service @SAP CP`
+The message is then forwarded to `Enterprise Backend as a Service @SAP CP` where it is stored.
+
+## Requirements
+To run this sample an `Enterprise Messaging Service @SAP CP` and `Enterprise Backend as a Service @SAP CP` are required.
 
 ## Deployment
-
 First, create a deployment file to provide credentials, topics and queue names.
 Run inside the project directory:
 ```bash
