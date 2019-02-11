@@ -11,7 +11,7 @@
     }
   },
 
-  "_configs": {
+  "configs": {
     "amqp-echo": {
       "source": "./data/xbem/cfg"
     }
@@ -27,7 +27,7 @@
     "amqp-echo": {
       "type": "AMQP",
       "secret": "amqp-echo",
-      "_config": "amqp-echo"
+      "config": "amqp-echo"
     }
   }
 }
