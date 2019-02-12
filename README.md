@@ -6,7 +6,7 @@ Direct integration with SAP S/4HANA Business Event Handling allows efficient dev
 
 This repository provides documentation and samples of how to implement functions (Node.js) for SAP Cloud Platform Functions in the Cloud Foundry environment. Details on each sample application and the covered scenario are described in the table _List of content and sample projects_ below.
 
-For more details of **SAP Cloud Platform Functions** take a look at [SAP Cloud Platform Functions on SAP Help portal](https://help.sap.com/viewer/product/SAP_FUNCTIONS/Cloud/en-US).
+For more details of **SAP Cloud Platform Functions** take a look at [SAP Cloud Platform Functions on SAP Help portal](https://help.sap.com/viewer/94fafb5bcf8f4c5cbdd0cdd8e358183c/Cloud/en-US/4968e80fc3984d9ca3fcc9a2ed2fc48e.html).
 
 This repository provides samples of how to implement a function (Node.js) for SAP Cloud Platform Functions in the Cloud Foundry environment.
 
