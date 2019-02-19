@@ -71,7 +71,7 @@ git clone https://github.com/SAP/cloud-function-nodejs-samples
 
 For details on how to configure and run the samples please take a look into the README in the corresponding samples directory.
 
-The file `faas.json` in each sample directory is used as a manifest. It defines secrets, functions and triggers
+The file __`faas.json`__ in each sample directory is used as a manifest. It defines secrets, functions and triggers
 for one single project.
 
 ## Support
