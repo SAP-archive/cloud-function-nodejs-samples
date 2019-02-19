@@ -25,11 +25,16 @@ This repository provides samples of how to implement a function (Node.js) for SA
 ## Requirements
 To run the samples a [Functions Service @SAP CP](https://help.sap.com/viewer/94fafb5bcf8f4c5cbdd0cdd8e358183c/Cloud/en-US/3418355e1497473baf071e28294dde41.html) is required.
 
-1. Install __faas-cli__
+1. Install Node.js
+
+   Download and install [Node.js](https://nodejs.org/en/download/)(includes npm).
+   The Node.js version must be >= 8.12.x.
+   
+2. Install __faas-cli__
 
     Download the binary either from Nexus or from the [CP Tools Page](https://tools.hana.ondemand.com/#cloud).
 
-2. Install __faas-sdk__
+3. Install __faas-sdk__
 
     Add the SAP NPM Registry to your npm configuration for all `@sap` scoped modules.
     ```bash
@@ -52,7 +57,7 @@ To run the samples a [Functions Service @SAP CP](https://help.sap.com/viewer/94f
     ```
     to test successful installation.
 
-3. Install CloudFoundry command line tools (CF CLI)
+4. Install CloudFoundry command line tools (CF CLI)
 
     [Download and install the Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html).
 
