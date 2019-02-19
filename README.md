@@ -25,47 +25,46 @@ This repository provides samples of how to implement a function (Node.js) for SA
 ## Requirements
 To run the samples a `Functions Service @SAP CP` is required.
 
-### 1. Install `faas-cli`
+1. Install `faas-cli`
 
-Download the binary either from Nexus or from the [CP Tools Page](https://tools.hana.ondemand.com/#cloud).
+    Download the binary either from Nexus or from the [CP Tools Page](https://tools.hana.ondemand.com/#cloud).
 
-### 2. Install __`faas-sdk`__
+2. Install __`faas-sdk`__
 
-Add the SAP NPM Registry to your npm configuration for all `@sap` scoped modules.
-```bash
-npm config set "@sap:registry https://npm.sap.com"
-```
+    Add the SAP NPM Registry to your npm configuration for all `@sap` scoped modules.
+    ```bash
+    npm config set "@sap:registry https://npm.sap.com"
+    ```
 
+    Installation or update:
+    * Linux
+        ```bash
+        sudo npm install @sap/faas -g
+        ````
+    * Windows (as usual user)
+        ```bash
+        npm install @sap/faas -g
+        ````
 
-Installation or update:
-* Linux
-```bash
-sudo npm install @sap/faas -g
-````
-* Windows (as usual user)
-```bash
-npm install @sap/faas -g
-````
+    Finally, run:
+    ```bash
+    faas-sdk version
+    ```
+    to test successful installation.
 
-And run:
-```bash
-faas-sdk version
-```
-to test successful installation.
+3. Install CloudFoundry command line tools (CF CLI)
 
-### 3. Install `cf`
+    [Download and install the Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html).
 
-Download the binary from [Installing the cf CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html).
+    Run `cf` login for your CF space.
 
-Run `cf` login for your CF space.
+    Make sure your `Functions Service @SAP CP` [service](https://cli.cloudfoundry.org/en-US/cf/create-service.html) and [service key](https://cli.cloudfoundry.org/en-US/cf/create-service-key.html) exists.
 
-Make sure your `Functions Service @SAP CP` [service](https://cli.cloudfoundry.org/en-US/cf/create-service.html) and [service key](https://cli.cloudfoundry.org/en-US/cf/create-service-key.html) exists.
-
-Further necessary configuration and settings are dependent on the specific sample and are documented there.
+    Further necessary configuration and settings are dependent on the specific sample and are documented there.
 
 ## Download and Installation
 
-To download and install the samples just [clone](https://gist.github.com/derhuerst/1b15ff4652a867391f03) this repository via:
+To download and install the samples just [clone](https://gist.github.com/derhuerst/1b15ff4652a867391f03) this repository using this command:
 ```bash
 git clone https://github.com/SAP/cloud-function-nodejs-samples
 ```
