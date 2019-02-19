@@ -8,7 +8,7 @@ The consumer functions is subscribed to the queue which the producer function us
 The consumer function prints the message payload into the logs.
 
 ## Requirements
-To run this sample an `Enterprise Messaging Service @SAP CP` is required.
+To run this sample an __`Enterprise Messaging Service @SAP CP`__ is required.
 
 ## Deployment
 First, create a deployment file to provide credentials, topics and queue names.

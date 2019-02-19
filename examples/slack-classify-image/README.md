@@ -4,7 +4,7 @@
 
 A Slack application, for example within a test workspace, is required.
 The Slack application defines a bot user.
-The Slack application is subscribed to the `file_shared` bot event.
+The Slack application is subscribed to the __`file_shared`__ bot event.
 Bot events are used, because image classification should be limited to channels where the bot user is invited.
 You can manage the slack application.
 

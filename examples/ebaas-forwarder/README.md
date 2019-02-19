@@ -1,10 +1,10 @@
 # Example: Ebaas Forwarder
 
-A function is triggered via a message from `Enterprise Messaging Service @SAP CP`
-The message is then forwarded to `Enterprise Backend as a Service @SAP CP` where it is stored.
+A function is triggered via a message from __`Enterprise Messaging Service @SAP CP`__
+The message is then forwarded to __`Enterprise Backend as a Service @SAP CP`__ where it is stored.
 
 ## Requirements
-To run this sample an `Enterprise Messaging Service @SAP CP` and `Enterprise Backend as a Service @SAP CP` are required.
+To run this sample an __`Enterprise Messaging Service @SAP CP`__ and __`Enterprise Backend as a Service @SAP CP`__ are required.
 
 ## Deployment
 First, create a deployment file to provide credentials, topics and queue names.

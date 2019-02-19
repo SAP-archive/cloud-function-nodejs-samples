@@ -1,9 +1,9 @@
 # Example: Function calling another Function
 
-A function `chain-func1` will call another function `chain-func2`.
+A function __`chain-func1`__ will call another function __`chain-func2`__.
 
 ## Deployment
-Deploy the complete `call-other-function` sample as a project.
+Deploy the complete __`call-other-function`__ sample as a project.
 ```
 $ faas-cli project deploy --from-file call-other-function -s <FAAS_SERVICE> -k <FAAS_KEY> -v
 ```

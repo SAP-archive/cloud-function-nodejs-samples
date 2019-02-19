@@ -23,9 +23,9 @@ This repository provides samples of how to implement a function (Node.js) for SA
 |[slack-classify-image](./examples/slack-classify-image)| Advanced example, requires Slack integration | An image post in Slack triggers a function. The function classifies the image via `SAP Leonardo` |
 
 ## Requirements
-To run the samples a `Functions Service @SAP CP` is required.
+To run the samples a [Functions Service @SAP CP](https://help.sap.com/viewer/94fafb5bcf8f4c5cbdd0cdd8e358183c/Cloud/en-US/3418355e1497473baf071e28294dde41.html) is required.
 
-1. Install `faas-cli`
+1. Install __`faas-cli`__
 
     Download the binary either from Nexus or from the [CP Tools Page](https://tools.hana.ondemand.com/#cloud).
 
@@ -56,7 +56,7 @@ To run the samples a `Functions Service @SAP CP` is required.
 
     [Download and install the Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html).
 
-    Run `cf` login for your CF space.
+    Run `cf login` for your CF space.
 
     Make sure your `Functions Service @SAP CP` [service](https://cli.cloudfoundry.org/en-US/cf/create-service.html) and [service key](https://cli.cloudfoundry.org/en-US/cf/create-service-key.html) exists.
 
