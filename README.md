@@ -25,11 +25,11 @@ This repository provides samples of how to implement a function (Node.js) for SA
 ## Requirements
 To run the samples a [Functions Service @SAP CP](https://help.sap.com/viewer/94fafb5bcf8f4c5cbdd0cdd8e358183c/Cloud/en-US/3418355e1497473baf071e28294dde41.html) is required.
 
-1. Install __`faas-cli`__
+1. Install __faas-cli__
 
     Download the binary either from Nexus or from the [CP Tools Page](https://tools.hana.ondemand.com/#cloud).
 
-2. Install __`faas-sdk`__
+2. Install __faas-sdk__
 
     Add the SAP NPM Registry to your npm configuration for all `@sap` scoped modules.
     ```bash
@@ -56,9 +56,9 @@ To run the samples a [Functions Service @SAP CP](https://help.sap.com/viewer/94f
 
     [Download and install the Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html).
 
-    Run `cf login` for your CF space.
+    Run the command `cf login`, and [login to your Cloud Foundry environment](https://developers.sap.com/tutorials/hcp-cf-getting-started.html).
 
-    Make sure your `Functions Service @SAP CP` [service](https://cli.cloudfoundry.org/en-US/cf/create-service.html) and [service key](https://cli.cloudfoundry.org/en-US/cf/create-service-key.html) exists.
+    Make sure your **Functions Service @SAP CP** [service](https://cli.cloudfoundry.org/en-US/cf/create-service.html) and [service key](https://cli.cloudfoundry.org/en-US/cf/create-service-key.html) exists.
 
     Further necessary configuration and settings are dependent on the specific sample and are documented there.
 
@@ -71,11 +71,11 @@ git clone https://github.com/SAP/cloud-function-nodejs-samples
 
 For details on how to configure and run the samples please take a look into the README in the corresponding samples directory.
 
-The file __`faas.json`__ in each sample directory is used as a manifest. It defines secrets, functions and triggers
+The file __faas.json__ in each sample directory is used as a manifest. It defines secrets, functions and triggers
 for one single project.
 
 ## Support
-This project is _'as-is'_ with no support, no changes being made.
+This project is _as-is_ with no support, no changes being made.
 
 ## License
 Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
