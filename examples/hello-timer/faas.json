@@ -1,0 +1,25 @@
+{
+  "project": "hello-timer",
+  "version": "0.0.1",
+
+  "runtime": "nodejs8",
+  "library": "./lib",
+
+  "secrets": {
+  },
+
+  "functions": {
+    "hello-timer": {
+      "module": "index.js",
+      "secrets": []
+    }
+  },
+
+  "triggers": {
+    "timer": {
+      "type": "Timer",
+      "function": "hello-timer",
+      "schedule": "5 */1 * * * *"
+    }
+  }
+}

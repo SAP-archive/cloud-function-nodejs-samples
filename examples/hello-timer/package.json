@@ -1,0 +1,23 @@
+{
+  "name": "hello-timer",
+  "version": "1.0.0",
+  "keywords": [
+    "faas",
+    "timer",
+    "example"
+  ],
+  "engines": {
+    "node": ">=8.11.3"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@sap/faas": "=0.5.1",
+    "eslint": "=5.8.0",
+    "jsdoc": "=3.5.5"
+  },
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "scripts": {}
+}
