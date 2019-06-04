@@ -1,7 +1,7 @@
 # Example: hello-timer
 
 This example deploys a function which is tiggered by a timer. The function is triggered
-5 seconds past every minute.
+5 seconds past every minute. It will log the current timestamp to the console.
 
 Cron expression for schedule:
 

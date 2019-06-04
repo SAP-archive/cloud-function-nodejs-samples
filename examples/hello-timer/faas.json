@@ -11,6 +11,7 @@
   "functions": {
     "hello-timer": {
       "module": "index.js",
+      "handler": "handler",
       "secrets": []
     }
   },
