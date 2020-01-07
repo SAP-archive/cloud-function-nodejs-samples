@@ -4,6 +4,7 @@ This example deploys a function which generates the current timestamp as an QR c
 The QR code is displayed in a browser window.
 
 ## Deployment
+
 Deploy the project as usual:
 ```bash
  faas-cli project deploy -y ./deploy/values.yaml -s <FAAS_SERVICE> -k <FAAS_KEY> -v
