@@ -1,0 +1,35 @@
+{
+  "project": "kafkamessaging",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "configs": {
+    "kafka": {
+      "source": "./data/kafka"
+    },
+    "xbemcfg": {
+      "source": "./data/xbem/cfg"
+    }
+  },
+  "secrets": {
+    "xbemsec": {
+      "source": "./data/xbem/sec"
+    }
+  },
+  "functions": {
+    "publisher": {
+      "module": "index.js",
+      "handler": "publisher",
+      "configs": [
+        "kafka"
+      ]
+    }
+  },
+  "triggers": {
+    "kafkapush": {
+      "type": "AMQP",
+      "config": "xbemcfg",
+      "secret": "xbemsec"
+    }
+  }
+}

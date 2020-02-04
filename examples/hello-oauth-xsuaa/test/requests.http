@@ -1,0 +1,21 @@
+###
+
+// Get an Json Web Token (JWT) using your xsuaa credentials
+// Replace token endpoint (<url>/oauth/token), client id and secret with real values
+
+POST https://xxx.authentication.sap.hana.ondemand.com/oauth/token
+Authorization: Basic <client-id> <client-secret>
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&scope=
+
+###
+
+// Call the function using the token
+// Local (see "faas-sdk run"): http://localhost:8080/fun-oauth/
+// Cloud (Serverless Runtime): https://xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx-faas-http.tenant.prod-ng.test-functions.xfs.cloud.sap/fun-oauth/
+
+GET https://xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx-faas-http.tenant.prod-ng.test-functions.xfs.cloud.sap/trig-oauth/
+Authorization: Bearer <token>
+
+###

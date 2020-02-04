@@ -1,32 +1,29 @@
 {
   "project": "amqp-echo",
   "version": "0.0.1",
-
-  "runtime": "nodejs8",
+  "runtime": "nodejs10",
   "library": "./lib",
-
-  "secrets": {
-    "amqp-echo": {
-      "source": "./data/xbem/sec"
-    }
-  },
-
   "configs": {
     "amqp-echo": {
       "source": "./data/xbem/cfg"
     }
   },
-
   "functions": {
     "amqp-echo": {
       "module": "index.js"
     }
   },
-
+  "services": {
+    "my-echo-srv": {
+      "type": "x",
+      "instance": "y",
+      "key": "z"
+    }
+  },
   "triggers": {
     "amqp-echo": {
       "type": "AMQP",
-      "secret": "amqp-echo",
+      "service": "my-echo-srv",
       "config": "amqp-echo"
     }
   }

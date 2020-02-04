@@ -3,13 +3,13 @@
 const qr = require('qrcode');
 
 /**
- * @param {FaasEvent} event
- * @param {FaasContext} context
- * @return {Promise|*}
+ * @param {Faas.Event} event
+ * @param {Faas.Context} context
+ * @return {Promise<*>}
  */
-module.exports = function(event, context) {
+module.exports = async function (event, context) {
     return new Promise((resolve, reject) => {
-        const nowUTC = new Date().toISOString();
+        const nowUTC = (new Date()).toISOString();
 
         const stream = event.getResponseStream('image/png');
         stream.on('finish', resolve);

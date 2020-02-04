@@ -1,0 +1,31 @@
+{
+  "project": "hello-timer",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "functions": {
+    "hello-timer": {
+      "module": "index.js"
+    }
+  },
+  "triggers": {
+    "timer1": {
+      "type": "Timer",
+      "schedule": "15s",
+      "timezone": "",
+      "function": "hello-timer"
+    },
+    "timer2": {
+      "type": "Timer",
+      "schedule": "0/15 * * * * *",
+      "timezone": "",
+      "function": "hello-timer"
+    },
+    "timer3": {
+      "type": "Timer",
+      "schedule": "45 14 * * *",
+      "timezone": "Europe/Berlin",
+      "function": "hello-timer"
+    }
+  }
+}

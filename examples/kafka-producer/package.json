@@ -1,0 +1,28 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "keywords": [
+    "faas",
+    "example"
+  ],
+  "engines": {
+    "node": ">=8.11.3"
+  },
+  "devDependencies": {
+    "@sap/faas": ">=0.7.2",
+    "mocha": "=7.0.0"
+  },
+  "files": [
+    "data",
+    "lib",
+    "faas.json",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "npm run all-tests",
+    "all-tests": "node ./node_modules/mocha/bin/_mocha test/**/test*.js --colors -csdlJson --slow 200"
+  },
+  "dependencies": {
+    "kafkajs": "^1.12.0"
+  }
+}

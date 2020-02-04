@@ -10,22 +10,19 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@sap/faas": ">=0.5.1",
-    "eslint": "=5.8.0",
-    "jsdoc": "=3.5.5",
-    "mocha": "=5.2.0",
-    "sinon": "=7.1.1",
-    "supertest": "=3.3.0",
-    "istanbul": "=0.4.5"
+    "@sap/faas": ">=0.7.0",
+    "jsdoc": "=3.6.2",
+    "mocha": "=7.0.0",
+    "sinon": "=7.3.2"
   },
   "files": [
+    "data",
     "lib",
+    "faas.json",
     "package.json"
   ],
   "scripts": {
     "test": "npm run all-tests",
-    "all-tests": "node ./node_modules/mocha/bin/_mocha test/**/test*.js --colors -csdlJson --slow 200",
-    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive test/unit && istanbul check-coverage ./_gen/coverage/coverage.json",
-    "cover-unit-tests": "istanbul cover ./node_modules/mocha/bin/_mocha -- test/unit/**/test*.js --slow 200 && istanbul check-coverage ./_gen/coverage/coverage.json"
+    "all-tests": "node ./node_modules/mocha/bin/_mocha test/**/test*.js --colors -csdlJson --slow 200"
   }
 }

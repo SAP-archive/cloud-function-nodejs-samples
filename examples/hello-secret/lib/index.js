@@ -1,12 +1,16 @@
 'use strict';
+/** 
+* @typedef {import("@sap/faas").Faas.Event} Faas.Event 
+* @typedef {import("@sap/faas").Faas.Context} Faas.Context 
+*/
 
 /**
- * @param {FaasEvent} event
- * @param {FaasContext} context
- * @return {Promise|*}
+ * @param {Faas.Event} event
+ * @param {Faas.Context} context
+ * @return {Promise<*>}
  */
-module.exports = function(event, context) {
-    const text = context.getSecretValueString('sec1', 'text');
-    const rval = context.getSecretValueJSON('sec1', 'rv.json');
+module.exports = async function (event, context) {
+    const text = await context.getSecretValueString('sec1', 'text');
+    const rval = await context.getSecretValueJSON('sec1', 'rv.json');
     return rval.Info.Success;
 };

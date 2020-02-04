@@ -1,0 +1,8 @@
+{
+    "uri": "wss://enterprise-messaging-messaging-gateway.cfapps.xxx.ondemand.com/protocols/amqp10ws",
+    "oa2": {
+        "endpoint": "https://functions-sub.authentication.eu10.hana.ondemand.com/oauth/token",
+        "client": "xxx",
+        "secret": "xxx"
+    }
+}

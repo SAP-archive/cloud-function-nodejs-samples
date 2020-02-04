@@ -1,0 +1,12 @@
+{
+  "incoming": {
+    "inp01": {
+      "sourceAddress": "queue:kafkapush"
+    }
+  },
+  "outgoing": {
+    "err01": {
+      "targetAddress": "topic:echo/failed"
+    }
+  }
+}
