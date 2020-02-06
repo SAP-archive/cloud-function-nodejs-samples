@@ -20,7 +20,6 @@ For more details about **Functions** take a look at [Functions on SAP Help porta
 |[hello-timer](./examples/hello-timer)| Basic example | A function that is triggered according to a CRON expression based schedule |
 |[qrcode-producer](./examples/qrcode-producer)| Basic example | A function produces the current timestamp as QR code |
 |[s4sdk](./examples/s4sdk)| Advanced example | A function leverages the `SAP Cloud SDK for JavaScript` to interact with the `BusinessPartner` API exposed by an `SAP S/4HANA` system |
-|[weather](./examples/weather)| Advanced example, requires `OpenWeatherMap` account | Two functions representing a simple web page that handles user input and displays the result |
 |[kafka-producer](./examples/kafka-producer)| Advanced example, requires Kafka broker instance | A function is triggered by a message and produces a message on a Kafka topic |
 
 ## Requirements
