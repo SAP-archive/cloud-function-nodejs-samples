@@ -1,0 +1,17 @@
+{
+  "rules": [
+    {
+      "filter": {
+        "incoming": "inp01"
+      },
+      "action": {
+        "function": "kafkapush",
+        "failure": "reject",
+        "content": "application/octet-stream"
+      },
+      "errorTo": {
+        "outgoing": "err01"
+      }
+    }
+  ]
+}

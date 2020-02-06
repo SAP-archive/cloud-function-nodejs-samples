@@ -1,16 +1,13 @@
 'use strict';
-
-const request = require('request');
-
-module.exports = {
-    f1: first,
-    f2: second
-};
+/** 
+* @typedef {import("@sap/faas").Faas.Event} Faas.Event 
+* @typedef {import("@sap/faas").Faas.Context} Faas.Context 
+*/
 
 /**
- * @param {FaasEvent} event
- * @param {FaasContext} context
- * @return {Promise|*}
+ * @param {Faas.Event} event
+ * @param {Faas.Context} context
+ * @return {Promise<*>}
  */
 async function first(event, context) {
     const result = await context.callFunction('chain-func2', {
@@ -21,11 +18,16 @@ async function first(event, context) {
 }
 
 /**
- * @param {FaasEvent} event
- * @param {FaasContext} context
- * @return {Promise|*}
+ * @param {Faas.Event} event
+ * @param {Faas.Context} context
+ * @return {Promise<*>}
  */
-function second(event, context) {
+async function second(event, context) {
     return event.data + ' >> ' + context.funcName;
 }
+
+module.exports = {
+    f1: first,
+    f2: second
+};
 

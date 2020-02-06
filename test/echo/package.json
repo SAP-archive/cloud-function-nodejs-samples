@@ -1,0 +1,11 @@
+{
+  "name": "echo",
+  "version": "0.0.1",
+  "description": "Simple ",
+  "author": "faas@sap.com",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2"
+  }
+}

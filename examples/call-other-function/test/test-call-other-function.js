@@ -17,8 +17,8 @@ describe('call other function example', () => {
                     type: 'text/plain',
                     data: source
                 });
-                assert.equal(result.type, 'text/plain; charset=utf-8');
-                assert.equal(result.data,  source + ' >> chain-func1 >> chain-func2');
+                assert.strictEqual(result.type, 'text/plain; charset=utf-8');
+                assert.strictEqual(result.data,  source + ' >> chain-func1 >> chain-func2');
             }
         );
     });

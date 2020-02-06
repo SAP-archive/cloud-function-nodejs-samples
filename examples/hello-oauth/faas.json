@@ -1,0 +1,25 @@
+{
+  "project": "hello-oauth",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "secrets": {
+    "sec-oauth": {
+      "source" : "./data"
+    }
+  },
+  "configs": {},
+  "functions": {
+    "fun-oauth": {
+      "module": "index.js",
+      "secrets": ["sec-oauth"],
+      "configs": []
+    }
+  },
+  "triggers": {
+    "trig-oauth": {
+      "type": "HTTP",
+      "function": "fun-oauth"
+    }
+  }
+}

@@ -1,23 +1,21 @@
 {
   "project": "hello-secret",
   "version": "0.0.1",
-
-  "runtime": "nodejs8",
+  "runtime": "nodejs10",
   "library": "./lib",
-
   "secrets": {
     "sec1": {
-      "source" : "./data"
+      "source": "./data"
     }
   },
-
   "functions": {
     "hello-secret": {
       "module": "index.js",
-      "secrets": ["sec1"]
+      "secrets": [
+        "sec1"
+      ]
     }
   },
-
   "triggers": {
     "demo": {
       "type": "HTTP",

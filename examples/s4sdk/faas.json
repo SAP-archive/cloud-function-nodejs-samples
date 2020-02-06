@@ -1,0 +1,25 @@
+{
+  "project": "s4sdk-business-partner",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "secrets": {
+    "s4-destination": {
+      "source": "./data/s4"
+    }
+  },
+  "functions": {
+    "s4sdk-business-partner": {
+      "module": "handler.js",
+      "secrets": [
+        "s4-destination"
+      ]
+    }
+  },
+  "triggers": {
+    "s4sdk-business-partner": {
+      "type": "HTTP",
+      "function": "s4sdk-business-partner"
+    }
+  }
+}

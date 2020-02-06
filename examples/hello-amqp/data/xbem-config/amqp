@@ -1,5 +1,0 @@
-{
-  "incoming": {
-    "inp1": { "sourceAddress": "queue:xxxxxx", "sndSettleMode": 0, "rcvSettleMode": 0, "maxLinkCredit": 50 }
-  }
-}

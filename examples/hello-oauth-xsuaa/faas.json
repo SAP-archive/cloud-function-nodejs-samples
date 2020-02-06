@@ -1,0 +1,27 @@
+{
+  "project": "hello-oauth-xsuaa",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "secrets": {
+    "sec-oauth": {
+      "source": "./data"
+    }
+  },
+  "configs": {},
+  "functions": {
+    "fun-oauth-xsuaa": {
+      "module": "index.js",
+      "secrets": [
+        "sec-oauth"
+      ],
+      "configs": []
+    }
+  },
+  "triggers": {
+    "trig-oauth-xsuaa": {
+      "type": "HTTP",
+      "function": "fun-oauth-xsuaa"
+    }
+  }
+}

@@ -6,7 +6,7 @@ const faas = require('@sap/faas');
 
 describe('hello secret example', () => {
 
-//  ************************************************************************************************
+    //  ************************************************************************************************
 
     it('using default values', (done) => {
         faas.test(done,
@@ -20,7 +20,7 @@ describe('hello secret example', () => {
         );
     });
 
-//  ************************************************************************************************
+    //  ************************************************************************************************
 
     it('using deploy values', (done) => {
         faas.test(done,
@@ -35,26 +35,26 @@ describe('hello secret example', () => {
         );
     });
 
-//  ************************************************************************************************
+    //  ************************************************************************************************
 
     it('read secret text', (done) => {
         faas.test(done,
             {
             },
             async (context) => {
-                assert.equal(context.getSecretValueString('sec1', 'text'), 'Hello World!');
+                assert.equal(await context.getSecretValueString('sec1', 'text'), 'Hello World!');
             }
         );
     });
 
-//  ************************************************************************************************
+    //  ************************************************************************************************
 
     it('read secret json', (done) => {
         faas.test(done,
             {
             },
             async (context) => {
-                assert.deepStrictEqual(context.getSecretValueJSON('sec1', 'rv.json'), {
+                assert.deepStrictEqual(await context.getSecretValueJSON('sec1', 'rv.json'), {
                     "Info": {
                         "Success": "Demo",
                         "Failure": "Todo"
@@ -68,7 +68,7 @@ describe('hello secret example', () => {
         );
     });
 
-//  ************************************************************************************************
+    //  ************************************************************************************************
 
 });
 
