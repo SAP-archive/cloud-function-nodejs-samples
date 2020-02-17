@@ -1,0 +1,34 @@
+{
+  "project": "weather",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "secrets": {
+    "credentials": {
+      "source": "./data/private"
+    }
+  },
+  "functions": {
+    "getweather": {
+      "module": "index.js",
+      "handler": "getWeather"
+    },
+    "postweather": {
+      "module": "index.js",
+      "handler": "postWeather",
+      "secrets": [
+        "credentials"
+      ]
+    }
+  },
+  "triggers": {
+    "get": {
+      "type": "HTTP",
+      "function": "getweather"
+    },
+    "post": {
+      "type": "HTTP",
+      "function": "postweather"
+    }
+  }
+}
