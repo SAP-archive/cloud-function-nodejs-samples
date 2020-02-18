@@ -1,0 +1,242 @@
+:root {
+  --bg_main: #0a1f44;
+  --text_light: #fff;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+ 
+button {
+  cursor: pointer;
+}
+  
+input {
+  -webkit-appearance: none;
+}
+  
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+ 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ 
+ul {
+  list-style: none;
+}
+ 
+li .delete-btn {
+  border:1px solid transparent;
+  background-color: transparent;
+  vertical-align: middle;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+}
+
+.delete-btn:after {
+	content: "X";
+  display: block;
+  
+  position: absolute;
+  top: 10px;
+  right: 0px;
+
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-color: #aaa;
+	z-index:1;
+	right: 35px;
+  float: right;
+	margin: auto;
+	padding: 2px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+	box-shadow: 0 0 2px #aaa;
+	cursor: pointer;
+}
+
+body {
+  font: 1rem/1.3 "Roboto", sans-serif;
+  background: -webkit-linear-gradient(to right, #314755, #26a0da); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #314755, #26a0da); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--text_dark);
+  padding: 50px;
+}
+
+/*CUSTOM VARIABLES HERE*/
+ 
+.top-banner {
+  color: var(--text_light);
+}
+ 
+.heading {
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 0.02em;
+  padding: 0 0 30px 0;
+}
+ 
+.top-banner form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+ 
+.top-banner form input {
+  font-size: 2rem;
+  height: 40px;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid;
+}
+ 
+.top-banner form input::placeholder {
+  color: currentColor; 
+}
+ 
+.top-banner form button {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 15px 20px;
+  margin-left: 15px;
+  border-radius: 5px;
+  background: var(--red);
+  transition: background 0.3s ease-in-out;
+}
+ 
+.top-banner form button:hover {
+  background: var(--darkred);
+}
+ 
+.top-banner form .msg {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  max-width: 450px;
+  min-height: 40px;
+}
+ 
+@media screen and (max-width: 700px) {
+  .top-banner form {
+    flex-direction: column;
+  }
+   
+  .top-banner form input,
+  .top-banner form button {
+    width: 100%;
+  }
+ 
+  .top-banner form button {
+    margin: 20px 0 0 0;
+  }
+   
+  .top-banner form .msg {
+    position: static;
+    max-width: none;
+    min-height: 0;
+    margin-top: 10px;
+  }
+}
+
+.ajax-section {
+  margin: 50px 0 20px;
+}
+ 
+.ajax-section .cities {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+ 
+@media screen and (max-width: 1000px) { 
+  .ajax-section .cities {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+ 
+@media screen and (max-width: 700px) {
+  .ajax-section .cities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+ 
+@media screen and (max-width: 500px) {  
+  .ajax-section .cities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*CUSTOM VARIABLES HERE*/
+ 
+.ajax-section .city {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  background: var(--text_light);
+  color: var(--text_med);
+}
+ 
+.ajax-section .city::after {
+  content: ’’;
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: var(--text_light);
+}
+ 
+.ajax-section figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+ 
+.ajax-section .city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--text_dark);
+}
+ 
+.ajax-section .city sup {
+  font-size: 0.5em;
+}
+ 
+.ajax-section .city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: var(--text_light);
+  background: var(--orange);
+}
+ 
+.ajax-section .city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
