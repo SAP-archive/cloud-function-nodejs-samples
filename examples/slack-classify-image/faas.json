@@ -1,0 +1,28 @@
+{
+  "project": "slack",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "secrets": {
+    "slack-classify-image": {
+      "source": "./data/services"
+    }
+  },
+  "functions": {
+    "slack-handler": {
+      "module": "slack-event.js"
+    },
+    "slack-classify": {
+      "module": "classify-image.js",
+      "secrets": [
+        "slack-classify-image"
+      ]
+    }
+  },
+  "triggers": {
+    "slack-handler": {
+      "type": "HTTP",
+      "function": "slack-handler"
+    }
+  }
+}
