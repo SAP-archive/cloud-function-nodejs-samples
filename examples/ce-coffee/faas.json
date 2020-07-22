@@ -1,0 +1,44 @@
+{
+  "project": "ce-coffee",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "services": {
+    "my-ems": {
+      "type": "enterprise-messaging",
+      "instance": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "key": "xxx"
+    }
+  },
+  "functions": {
+    "ce-coffee-handler": {
+      "module": "index.js"
+    }
+  },
+  "triggers": {
+    "my-ce": {
+      "type": "CloudEvents",
+      "service": "my-ems",
+      "rules": [
+        {
+          "ce-source": "",
+          "ce-type": "com.sap.coffee.required",
+          "function": "ce-coffee-handler",
+          "failure": "accept"
+        },
+        {
+          "ce-source": "",
+          "ce-type": "com.sap.coffee.produced",
+          "function": "ce-coffee-handler",
+          "failure": "accept"
+        },
+        {
+          "ce-source": "",
+          "ce-type": "com.sap.coffee.consumed",
+          "function": "ce-coffee-handler",
+          "failure": "accept"
+        }
+      ]
+    }
+  }
+}
