@@ -30,7 +30,7 @@ The HTTP trigger URL can be retrieved from:
 ```
 xfsrt-cli faas project get slack
 ```
-The `artifacts` array contains an object with the URL in its `name` property (and a `reference` to HTTP trigger `slack-handler`)
+The output contains the trigger URL.
 
 ## Test
 Install the Slack application to your workspace. In Slack, create a channel. Invite the bot to your channel.

@@ -1,0 +1,5 @@
+config-values:
+  cfg1:
+    rv.json:
+      Info:
+        Success: Nice Test!

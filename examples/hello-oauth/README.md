@@ -34,11 +34,7 @@ Update the generated file with the public key you generated above. And finally, 
 ```
 
 ### Test
-The HTTP trigger URL can be retrieved from:
-```bash
-xfsrt-cli faas project get hello-oauth
-```
-The `artifacts` array contains an object with the URL in its `name` property (and a `reference` to HTTP trigger `trig-oauth`)
+The output received after executing the [deployment](#Deployment) step contains the trigger URL.
 
 Setup your HTTP request according to this to trigger the function:
 ```
@@ -48,7 +44,7 @@ Authorization: Bearer <token>
 
 Check the function log on the command line
 ```bash
-xfsrt-cli faas project logs -n hello-oauth --functions fun-oauth
+xfsrt-cli faas project logs hello-oauth --functions fun-oauth
 ```
 
 The output should contain the token payload.

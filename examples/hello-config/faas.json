@@ -1,0 +1,25 @@
+{
+  "project": "hello-config",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "configs": {
+    "cfg1": {
+      "source": "./data"
+    }
+  },
+  "functions": {
+    "hello-config": {
+      "module": "index.js",
+      "configs": [
+        "cfg1"
+      ]
+    }
+  },
+  "triggers": {
+    "demo-config": {
+      "type": "HTTP",
+      "function": "hello-config"
+    }
+  }
+}

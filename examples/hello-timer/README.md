@@ -12,11 +12,11 @@ The function is triggered by the timers `timer1`, `timer2`, `timer3` and logs th
 ## Test
 In order to verify that the function `hello-timer` is invoked according to the configurations of the three timer triggers, view the logs using:
 ```
-xfsrt-cli faas project logs -n hello-timer --functions hello-timer
+xfsrt-cli faas project logs --functions hello-timer
 ```
 
 Expected result:
-* You should be able to see that e.g. `timer1` causes log entries of format `"/faas/timer/timer1 <timestamp>` to be written every 15 seconds.
+* You should be able to see that e.g. `timer1` causes log entries of format `"/default/sap.xfs.faas/timer1 <timestamp>` to be written every 15 seconds.
 
 ## License
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.

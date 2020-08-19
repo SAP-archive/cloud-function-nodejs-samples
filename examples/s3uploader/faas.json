@@ -1,0 +1,25 @@
+{
+  "project": "aws-uploader",
+  "version": "0.0.1",
+  "runtime": "nodejs8",
+  "library": "./lib",
+  "secrets": {
+    "s3": {
+      "source": "./data/s3"
+    }
+  },
+  "functions": {
+    "uploader": {
+      "module": "index.js",
+      "secrets": [
+        "s3"
+      ]
+    }
+  },
+  "triggers": {
+    "uploader-trigger": {
+      "type": "HTTP",
+      "function": "uploader"
+    }
+  }
+}
