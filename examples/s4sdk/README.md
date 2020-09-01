@@ -25,11 +25,7 @@ xfsrt-cli faas project deploy -y ./deploy/values.yaml -v
 ```
 
 ### Test
-The HTTP trigger URL can be retrieved from:
-```
-xfsrt-cli faas project get s4sdk-business-partner
-```
-The `artifacts` array contains an object with the URL in its `name` property (and a `reference` to HTTP trigger `s4sdk-business-partner`)
+The output received after executing the [deployment](#Deployment) step contains the trigger URL.
 
 Invoke the function `s4sdk-business-partner` via invoking the HTTP trigger URL.
 

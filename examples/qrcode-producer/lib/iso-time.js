@@ -1,4 +1,9 @@
 'use strict';
+/**
+ * @namespace Faas
+ * @typedef {import("@sap/faas").Faas.Event} Faas.Event
+ * @typedef {import("@sap/faas").Faas.Context} Faas.Context
+ */
 
 const qr = require('qrcode');
 

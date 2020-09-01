@@ -9,11 +9,10 @@ $ xfsrt-cli faas project deploy -v
 ```
 
 ## Test
-The HTTP trigger URL can be retrieved from:
-```
-xfsrt-cli faas project get chain
-```
-The `artifacts` array contains an object with the URL in its `name` property (and a `reference` to the HTTP trigger `chain-simple`)
+The output received after executing the [deployment](#Deployment) step contains the trigger endpoint.
+
+Invoke the __`chain-func1`__ function via invoking the HTTP trigger URL.
+
 
 ## License
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.

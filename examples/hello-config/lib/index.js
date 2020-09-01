@@ -11,7 +11,7 @@
  * @return {Promise<*>}
  */
 module.exports = async function (event, context) {
-    const text = await context.getSecretValueString('sec1', 'text');
-    const rval = await context.getSecretValueJSON('sec1', 'rv.json');
+    const text = await context.getConfigValueString('cfg1', 'text');
+    const rval = await context.getConfigValueJSON('cfg1', 'rv.json');
     return rval.Info.Success;
 };

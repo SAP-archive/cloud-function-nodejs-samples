@@ -38,9 +38,9 @@ Once you have retrieved the token, the HTTP trigger URL can be retrieved from:
 ```bash
 xfsrt-cli faas project get hello-oauth-xsuaa
 ```
-The `artifacts` array contains an object with the URL in its `name` property (and a `reference` to HTTP trigger `trig-oauth`).
+The output contains the trigger endpoint.
 
-Call the function using the endpoint with the token:
+Call the function `fun-oauth-xsuaa` using the endpoint with the token:
 
 ```
 GET <HTTPTriggerURL>

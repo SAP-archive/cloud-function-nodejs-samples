@@ -1,7 +1,9 @@
 'use strict';
-/** @typedef {import("@sap/faas").Faas.Event} Faas.Event 
-*   @typedef {import("@sap/faas").Faas.Context} Faas.Context 
-*/
+/**
+ * @namespace Faas
+ * @typedef {import("@sap/faas").Faas.Event} Faas.Event
+ * @typedef {import("@sap/faas").Faas.Context} Faas.Context
+ */
 
 const { BusinessPartner } = require('@sap/cloud-sdk-vdm-business-partner-service');
 

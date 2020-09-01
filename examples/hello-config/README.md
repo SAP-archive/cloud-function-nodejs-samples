@@ -14,7 +14,7 @@ Update the generated file. And finally, deploy the project as usual:
 ```
 
 ### Test
-The output received after executing the [deployment](#Deployment) step contains the trigger URL.
+The output received after executing the [deployment](#Deployment) step contains the trigger endpoint.
 
 Invoke the function `hello-secret` via invoking the HTTP trigger URL.
 

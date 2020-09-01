@@ -23,12 +23,7 @@ Update the generated file with your API key. And finally, deploy the project as 
 The deployment contains two functions with each of them having an HTTP trigger attached: `getweather` which is triggered by the `GET` request of the start page, `postweather` for the `POST` request when the form is submitted.
 
 ### Test
-
-The HTTP trigger URLs for the the functions can be retrieved from:
-```
-xfsrt-cli faas project get weather
-```
-The `artifacts` array contains two objects with the respective URL in the `name` property (and a `reference` to HTTP triggers `post` and `get`, respectively)
+The output received after executing the [deployment](#Deployment) step contains the trigger URLs.
 
 Copy the URL of the `post` trigger. Navigate to [HTML template file](./lib/views/index.ejs) and paste the URL as the value of the `action` attribute inside the `form` tag.
 

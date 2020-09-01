@@ -29,7 +29,7 @@ For this example we will register a service using the xfsrt-cli. This will simpl
 Given the __`Enterprise Messaging`__ service instance name and binding, run the following command:
 
 ```bash
-xfsrt-cli faas service register -s <EMInstanceServiceName> -b <EMInstanceServiceBinding>
+xfsrt-cli faas service register -s <EMInstanceServiceName> -b <EMInstanceServiceKey>
 ```
 
 Create a deployment file to provide credentials, topics and queue names.

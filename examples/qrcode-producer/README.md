@@ -6,15 +6,11 @@ The QR code is displayed in a browser window.
 ## Deployment
 Deploy the project:
 ```bash
- xfsrt-cli faas project deploy -y ./deploy/values.yaml -v
+ xfsrt-cli faas project deploy
 ```
 
 ## Test
-The HTTP trigger URL can be retrieved from:
-```
-xfsrt-cli faas project get qrcode-prodcuer
-```
-The `artifacts` array contains an object with the URL in its `name` property (and a `reference` to the HTTP trigger `build-qrcode`)
+The output received after executing the [deployment](#Deployment) step contains the trigger endpoint.
 
 Invoke the function `build-qrcode` via invoking the HTTP trigger URL.
 
