@@ -1,7 +1,7 @@
-# Functions Node.js - Samples for SAP Cloud Platform Extension Factory
+# Functions Node.js - Samples for SAP Cloud Platform Serverless Runtime
 
 ## Description
-In the following the capabilities of the sub component **Functions** of the **SAP Cloud Platform Extension Factory, serverless runtime** (in short: **Functions**) will be demonstrated. Functions provide a cloud-based serverless framework for the development of decoupled and resilient applications and integration flows (using SAP Cloud Integration) to support asynchronous communication principles.
+In the following the capabilities of the sub component **Functions** of the **SAP Cloud Platform Serverless Runtime** (in short: **Functions**) will be demonstrated. Functions provide a cloud-based serverless framework for the development of decoupled and resilient applications and integration flows (using SAP Cloud Integration) to support asynchronous communication principles.
 Direct integration with SAP S/4HANA Business Event Handling allows efficient development of innovative and scaling extensions.
 
 This repository provides documentation and samples of how to implement functions (Node.js) on **SAP Cloud Platform** in the Cloud Foundry environment. Details on each sample application and the covered scenario are described in the table _List of content and sample projects_ below.
@@ -66,7 +66,7 @@ To run the samples, make sure you have completed the [initial setup](https://hel
 
     Run the command `cf login`, and [login to your Cloud Foundry environment](https://developers.sap.com/tutorials/hcp-cf-getting-started.html).
 
-    Make sure your **SAP Cloud Platform Extension Factory** [service instance](https://help.sap.com/viewer/bf7b2ff68518427c85b30ac3184ad215/Cloud/en-US/06f5c1adeb304f37b88d51dcd30d9a1b.html) and [service key](https://help.sap.com/viewer/bf7b2ff68518427c85b30ac3184ad215/Cloud/en-US/8400ccd0efc94c3096a9468c1e5f63ce.html) exist.
+    Make sure your **SAP Cloud Platform Serverless Runtime** [service instance](https://help.sap.com/viewer/bf7b2ff68518427c85b30ac3184ad215/Cloud/en-US/06f5c1adeb304f37b88d51dcd30d9a1b.html) and [service key](https://help.sap.com/viewer/bf7b2ff68518427c85b30ac3184ad215/Cloud/en-US/8400ccd0efc94c3096a9468c1e5f63ce.html) exist.
 
     Further necessary configuration and settings are dependent on the specific sample and are documented there.
 
