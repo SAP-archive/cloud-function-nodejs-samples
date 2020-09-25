@@ -39,12 +39,6 @@ To run the samples, make sure you have completed the [initial setup](https://hel
 
 3. Install __faas-sdk__
 
-    Add the SAP NPM Registry to your npm configuration for all `@sap` scoped modules.
-    ```bash
-    npm config set "@sap:registry=https://npm.sap.com"
-    ```
-
-    Installation or update:
     * Linux
         ```bash
         sudo npm install @sap/faas -g
