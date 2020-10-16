@@ -15,7 +15,8 @@ For more details about **Functions** take a look at [Functions on SAP Help porta
 |[amqp-echo](./examples/amqp-echo)| Basic `AMQP 1.0` example | An echo function with messaging |
 |[ce-coffee](./examples/ce-coffee)| Basic `CloudEvents` example | A `CloudEvents` producing function attached to a `CloudEvents` trigger |
 |[call-other-function](./examples/call-other-function)| Basic example | A function calls another function |
-|[hello-oauth](./examples/hello-oauth) | Basic `OAuth` example | The function is triggred by an HTTP request and does `OAuth` validation of the token using a pre-defined public key |
+|[hello-world-jwt-auth](./examples/hello-world-jwt-auth) | OAuth based token validation by HTTP trigger | A valid JWT has to be presented to an HTTP trigger before the function can be triggered |
+|[hello-oauth](./examples/hello-oauth) | Basic `OAuth` example | The function is triggered by an HTTP request and does `OAuth` validation of the token using a pre-defined public key |
 |[hello-oauth-xsuaa](./examples/hello-oauth-xsuaa) | Advanced `OAuth` example using custom `XSUAA` | The function is triggred by an HTTP request and does `OAuth` validation of the token using a custom `XSUAA` instance |
 |[hello-secret](./examples/hello-secret) | Basic example | A function extracts data from a secret |
 |[hello-timer](./examples/hello-timer)| Basic example | A function that is triggered according to a CRON expression based schedule |
