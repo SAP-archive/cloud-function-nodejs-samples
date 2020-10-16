@@ -1,0 +1,35 @@
+{
+  "project": "hello-world-jwt-auth",
+  "version": "0.0.1",
+  "runtime": "nodejs10",
+  "library": "./lib",
+  "services": {
+    "xsuaa-srv": {}
+  },
+  "functions": {
+    "call-hello-world": {
+      "module": "call-fn.js"
+    },
+    "hello-world": {
+      "module": "index.js"
+    }
+  },
+  "triggers": {
+    "jwt-auth": {
+      "type": "HTTP",
+      "function": "hello-world",
+      "auth": {
+        "type": "xsuaa",
+        "service": "xsuaa-srv"
+      }
+    },
+    "no-auth": {
+      "type": "HTTP",
+      "function": "hello-world"
+    },
+    "call-hello-world": {
+      "type": "HTTP",
+      "function": "call-hello-world"
+    }
+  }
+}
