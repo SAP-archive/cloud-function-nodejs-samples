@@ -7,7 +7,7 @@ The implementation uses the [OpenWeatherMap API](https://openweathermap.org/api)
 
 ## Requirements
 
-* You have to create a free account on [OpenWeatherMap.org](openweathermap.org/guide). Follow the guide and create an API key which you will need in the [Deployment](#Deployment) section.
+* You have to create a free account on [OpenWeatherMap.org](https://openweathermap.org/guide). Follow the guide and create an API key which you will need in the [Deployment](#Deployment) section.
 
 
 ## Deployment
