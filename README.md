@@ -1,5 +1,8 @@
 # Functions Node.js - Samples for SAP Cloud Platform Serverless Runtime
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-function-nodejs-samples)](https://api.reuse.software/info/github.com/SAP-samples/cloud-function-nodejs-samples)
+
+
 ## Description
 In the following the capabilities of the sub component **Functions** of the **SAP Cloud Platform Serverless Runtime** (in short: **Functions**) will be demonstrated. Functions provide a cloud-based serverless framework for the development of decoupled and resilient applications and integration flows (using SAP Cloud Integration) to support asynchronous communication principles.
 Direct integration with SAP S/4HANA Business Event Handling allows efficient development of innovative and scaling extensions.
